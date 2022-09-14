@@ -5,6 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>css_005_selector.html</title>
+    <style>
+      /* 선택자 조합 */
+      /* > : 자식 선택자 */
+      div > span {
+        color: yellow;
+      }
+
+      /* 공백은 자손 선택자 */
+      div p span {
+        color: purple;
+      }
+
+      /* + : 인접(형제) 선택자 */
+      div + p {
+        background-color: red;
+      }
+
+      /* [속성명='값'] 속성 선택자 */
+      p[class="one"] {
+        border: 1px solid orange;
+      }
+
+      /* ,(쉼표) : 그룹화 선택자 */
+      img,
+      address {
+        border: 3px solid purple;
+      }
+    </style>
   </head>
   <body>
     <div>
