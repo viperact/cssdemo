@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_023_float.html</title>
+    <style>
+    .wrap {
+        width: 900px;
+        height: 602px;
+        background-color: yellow;
+        border-bottom: 1px solid;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-top: 1px solid;
+      }
+
+      #header {
+        width: 900px;
+        height: 100px;
+        background-color: blue;
+        /* border-top: 1px solid; */
+        border-bottom: 1px solid;
+      }
+
+      .colmn_left{
+        width: 590px;
+        height: 500px;
+        background-color: olive;
+        float: left;
+        /* border-left: 1px solid; */
+        border-right: 1px solid;
+      }
+      .colmn_left .box2_sub1{
+        width: 590px;
+        height: 100px;
+        background-color: olive;
+        float: left;
+        border-bottom: 1px solid;
+        /* border-right: 1px solid; */
+      }
+      .colmn_left .box2_sub2{
+        width: 590px;
+        height: 400px;
+        background-color: olive;
+        float: left;
+        
+      }
+
+      .colmn_right{
+        width: 300px;
+        height: 500px;
+        float: right;
+        background-color: green;
+        /* border-right: 1px solid; */
+        border-left: 1px solid;
+      }
+      
+      .colmn_right .box3_sub1{
+        width: 300px;
+        height: 150px;
+        float: right;
+        background-color: green;
+        border-bottom: 1px solid;
+      }
+
+      .colmn_right .box3_sub2{
+        width: 300px;
+        height: 200px;
+        float: right;
+        background-color: green;
+        border-bottom: 1px solid;
+      }
+      .colmn_right .box3_sub3{
+        width: 300px;
+        height: 150px;
+        float: right;
+        background-color: green;
+      }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1" id="header"></div>
+        <div class='colmn_left'>
+            <div class='box2_sub1'></div>
+            <div class='box2_sub2'></div>
+        </div>
+        <div class='colmn_right'>
+            <div class='box3_sub1'></div>
+            <div class='box3_sub2'></div>
+            <div class='box3_sub3'></div>
+        </div>
+</body>
+</html>

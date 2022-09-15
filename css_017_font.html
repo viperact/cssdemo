@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_017_font.html</title>
+    <style>
+      /* font-family : 한글, 단어가 묶여있는 경우 ''로 묶어줘야함 */
+      /* font-size와 font-family는 생략불가 */
+      p {
+        font-family: serif, "굴림", "Times New Roman";
+        font-style: italic;
+        font-weight: bold;
+        font-size: 20px;
+        font-variant: small-caps; /* 글씨크기를 유지하며 대문자로 변경 */
+      }
+
+      /* font: font-style font-variant font-weight 
+      font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit; */
+
+      span {
+        font: 30px "굴림체";
+      }
+    </style>
+  </head>
+  <body>
+    <p>웹 문서의 폰트를 지정할 때 사용한다. web document</p>
+    <span>폰트에 스타일을 지정</span>
+  </body>
+</html>

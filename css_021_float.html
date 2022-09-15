@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_021_float.html</title>
+    <style>
+      /* 
+        float
+        1. float은 박스의 위치를 부모요소의 안에서
+        왼쪽 또는 오른쪽으로 이동시키는 기능이다.
+
+        2.float이 지정된 박스는 문서의 일반적인 흐름에
+        영향을 받지 않으면서 이동된 위치에 떠 있다.
+        */
+      .wrap {
+        background-color: gray;
+      }
+
+      div.wrap div {
+        width: 100px;
+        height: 100px;
+      }
+
+      .box1 {
+        background-color: red;
+        float: left;
+      }
+
+      .box2 {
+        background-color: green;
+        float: left;
+      }
+
+      .box3 {
+        background-color: blue;
+        float: right;
+      }
+
+      div.wrap p {
+        clear: both; /* float 해제 */
+      }
+
+      img {
+        float: left;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <p>inline</p>
+    </div>
+
+    <div class="other" style="background-color: yellow; height: 500px">
+      <img src="images/gosu.jpg" alt="고수 영화배우" />
+      <p>
+        대한민국의 배우. 논산대건고등학교 출신으로, 배우의 꿈을 안고 부모의
+        극심한 반대에도 불구하고 나홀로 상경, 고생 끝에 노이즈의 멤버 홍종구에게
+        픽업된 이후 뮤직비디오 등에 출연하다가 박카스 광고를 시작하여 곧이어
+        배우로 성공을 거두었다.대한민국 최고의 비주얼로 손꼽히는 배우 중
+        한명으로[3], 굵고 뚜렷한 이목구비와 안와상융기, 조각처럼 고운 선 때문에
+        아름다운 외모에도 불구하고 남자다움이 강하다. 얼굴이 정말 조각처럼
+        잘생겼다는 의미로 고수와 다비드를 합성한 ‘고비드’라는 별명으로 불린다
+      </p>
+    </div>
+  </body>
+</html>
